@@ -1,0 +1,24 @@
+type: object
+description: Зафиксированный курс обмена валюты
+required:
+  - settlementCurrency
+  - receiverCurrency
+  - rate
+  - createdAt
+  - expireAt
+properties:
+  settlementCurrency:
+    $ref: ./SettlementSymbolicCurrencyCode.yaml
+  receiverCurrency:
+    $ref: ./ReceiverSymbolicCurrencyCode.yaml
+  rate:
+    description: Курс обмена валюты
+    type: number
+  createdAt:
+    description: Дата и время фиксирования курса
+    type: string
+    format: date-time
+  expireAt:
+    description: Дата и время истечения срока действия курса
+    type: string
+    format: date-time

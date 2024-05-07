@@ -1,0 +1,10 @@
+type: object
+description: Персональные данные отправителя перевода
+oneOf:
+  - $ref: './ResidentSenderPersonalData.yaml'
+  - $ref: './NonResidentSenderPersonalData.yaml'
+discriminator:
+  propertyName: residency
+  mapping:
+    resident: './ResidentSenderPersonalData.yaml'
+    non_resident: './NonResidentSenderPersonalData.yaml'

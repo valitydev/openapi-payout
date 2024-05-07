@@ -1,0 +1,15 @@
+type: object
+required:
+  - name
+  - citizenship
+  - birthPlace
+properties:
+  name:
+    $ref: ./PersonName.yaml
+  citizenship:
+    type: string
+    description: Гражданство
+  birthPlace:
+    type: string
+    description: Место рождения
+    example: Москва

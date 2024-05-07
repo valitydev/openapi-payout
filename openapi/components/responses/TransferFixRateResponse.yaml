@@ -1,0 +1,19 @@
+type: object
+description: Результат фиксирования курса
+required:
+  - transferId
+  - externalId
+  - cashFrom
+  - cashTo
+  - cashRate
+properties:
+  transferId:
+    $ref: ../schemas/Transfer/TransferId.yaml
+  externalId:
+    $ref: ../schemas/ExternalId.yaml
+  cashFrom:
+    $ref: ../schemas/Transfer/TransferCashAmount.yaml
+  cashTo:
+    $ref: ../schemas/Transfer/TransferCashAmount.yaml
+  cashRate:
+    $ref: ../schemas/Transfer/FixedCashRate.yaml

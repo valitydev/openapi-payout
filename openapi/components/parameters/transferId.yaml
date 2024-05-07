@@ -1,0 +1,5 @@
+name: transferId
+in: path
+required: true
+schema:
+  $ref: '../schemas/Transfer/TransferId.yaml'

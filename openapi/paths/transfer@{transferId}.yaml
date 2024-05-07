@@ -1,0 +1,21 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/transferId.yaml
+get:
+  summary: Получить информацию о переводе
+  operationId: getTransferState
+  tags:
+    - transfer
+  responses:
+    '200':
+      description: Получены данные о переводе
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Transfer/Transfer.yaml
+    '400':
+      $ref: '../components/responses/BadRequest.yaml'
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '404':
+      description: Перевод не найден

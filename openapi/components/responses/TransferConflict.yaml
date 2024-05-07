@@ -1,0 +1,14 @@
+description: Перевод уже существует
+content:
+  application/json:
+    schema:
+      type: object
+      required:
+        - transferId
+        - externalId
+      properties:
+        transferId:
+          $ref: ../schemas/Transfer/TransferId.yaml
+        externalId:
+          $ref: ../schemas/ExternalId.yaml
+

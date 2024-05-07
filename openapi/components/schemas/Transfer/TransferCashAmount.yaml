@@ -1,0 +1,12 @@
+type: object
+description: Сумма перевода
+required:
+  - amount
+  - currency
+properties:
+  amount:
+    description: Сумма перевода в минорных единицах, например, в копейках
+    type: integer
+    example: 10001
+  currency:
+    $ref: ../SymbolicCurrencyCode.yaml

@@ -1,0 +1,15 @@
+type: object
+required:
+  - transferId
+  - sender
+  - receiver
+properties:
+  transferId:
+    $ref: ./TransferId.yaml
+  sender:
+    $ref: ../PersonalData/SenderPersonalData.yaml
+  receiver:
+    $ref: ../PersonalData/ReceiverPersonalData.yaml
+  conversionRate:
+    $ref: ./TransferConversionRate.yaml
+

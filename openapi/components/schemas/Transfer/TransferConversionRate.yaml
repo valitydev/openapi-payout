@@ -1,0 +1,17 @@
+type: object
+description: Курс конвертации. Курс по которому вы конвертируете валюта при переводе, например, рубли в лиры
+required:
+  - rate
+  - currency
+properties:
+  rate:
+    description: Курс
+    type: number
+    example: 0.036
+  settlementCurrency:
+    $ref: ../SymbolicCurrencyCode.yaml
+  receivingCurrency:
+    $ref: ../SymbolicCurrencyCode.yaml
+
+
+

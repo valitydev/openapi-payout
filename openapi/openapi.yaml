@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Transfer API
+  description:
+    $ref: './docs/api.md'
+  termsOfService: https://empayre.com/terms-of-use/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: 'https://api.empayre.com/v1'
+security:
+  - bearer: []
+paths:
+  '/transfer/fix-rate':
+    $ref: './paths/transfer-fix-rate.yaml'
+  '/transfer/confirm':
+    $ref: './paths/transfer-confirm.yaml'
+  '/transfer/{transferId}':
+    $ref: './paths/transfer@{transferId}.yaml'
+
+components:
+  securitySchemes:
+    bearer:
+      $ref: './components/security-schemes/Bearer.yaml'

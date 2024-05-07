@@ -1,0 +1,6 @@
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/Transfer/TransferConfirm.yaml
+description: Подтверждение перевода.
+required: true
