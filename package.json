@@ -6,9 +6,13 @@
     "json-merge-patch": "^1.0.0",
     "redoc-cli": "^0.13.17"
   },
+  "devDependencies": {
+    "@vality/openapi-generator-cli": "^2.0.0"
+  },
   "scripts": {
     "start": "openapi preview-docs",
     "build": "openapi bundle -o web_deploy/openapi.yaml && openapi bundle -o web_deploy/openapi.json",
-    "validate": "openapi lint"
+    "validate": "openapi lint",
+    "codegen": "vality-openapi generate ./web_deploy/openapi.json"
   }
 }
