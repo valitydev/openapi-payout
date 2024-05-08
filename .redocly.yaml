@@ -4,16 +4,16 @@ apis:
     root: "openapi/openapi.yaml"
 plugins:
   - './plugins/local.js'
-lint:
-  extends:
-    - recommended
-  rules:
-    tag-description: off
-  preprocessors:
-    local/merge-schemas: on
-features.openapi:
-  showConsole: true
-  layout:
-    scope: section
-  routingStrategy: browser
-  htmlTemplate: ./web/index.html
+extends:
+  - recommended
+rules:
+  tag-description: off
+preprocessors:
+  local/merge-schemas: on
+theme:
+  openapi:
+    showConsole: true
+    layout:
+      scope: section
+    routingStrategy: browser
+    htmlTemplate: ./web/index.html
