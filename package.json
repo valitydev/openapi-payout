@@ -7,7 +7,8 @@
     "redoc-cli": "^0.13.17"
   },
   "devDependencies": {
-    "@vality/openapi-generator-cli": "^2.0.0"
+    "@vality/openapi-generator-cli": "^2.0.0",
+    "json-merge-patch": "1.0.2"
   },
   "scripts": {
     "start": "openapi preview-docs",

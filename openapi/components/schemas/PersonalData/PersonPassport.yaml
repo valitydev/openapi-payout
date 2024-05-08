@@ -12,7 +12,14 @@ properties:
   identityType:
     type: string
   name:
-    $ref: ./PersonName.yaml
+    type: string
+    description: Имя
+  surname:
+    type: string
+    description: Фамилия
+  middleName:
+    type: string
+    description: Отчество
   citizenship:
     type: string
     description: Гражданство

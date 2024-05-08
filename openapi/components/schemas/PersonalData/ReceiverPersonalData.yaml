@@ -5,11 +5,18 @@ required:
   - birthPlace
 properties:
   name:
-    $ref: ./PersonName.yaml
+    type: string
+    description: Имя
+  surname:
+    type: string
+    description: Фамилия
+  middleName:
+    type: string
+    description: Отчество
+  dateOfBirth:
+    type: string
+    description: Дата рождения
+    format: date
   citizenship:
     type: string
     description: Гражданство
-  birthPlace:
-    type: string
-    description: Место рождения
-    example: Москва

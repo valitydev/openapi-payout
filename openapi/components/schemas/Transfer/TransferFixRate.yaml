@@ -16,6 +16,6 @@ properties:
   receiverCurrency:
     $ref: ./ReceiverSymbolicCurrencyCode.yaml
   cashAmount:
-    $ref: ./TransferCashAmount.yaml
+    $ref: ../CashAmount.yaml
   receiverCardNumber:
     $ref: ../CardNumber.yaml

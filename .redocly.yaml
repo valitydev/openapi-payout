@@ -2,9 +2,9 @@
 apis:
   core:
     root: "openapi/openapi.yaml"
+plugins:
+  - './plugins/local.js'
 lint:
-  plugins:
-    - './plugins/local.js'
   extends:
     - recommended
   rules:
