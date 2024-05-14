@@ -12,6 +12,3 @@ properties:
     $ref: ../SymbolicCurrencyCode.yaml
   receivingCurrency:
     $ref: ../SymbolicCurrencyCode.yaml
-
-
-
