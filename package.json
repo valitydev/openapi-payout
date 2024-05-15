@@ -1,0 +1,19 @@
+{
+  "name": "openapi-analytics",
+  "version": "0.0.1",
+  "dependencies": {
+    "@redocly/cli": "^1.12.0",
+    "json-merge-patch": "^1.0.0",
+    "redoc-cli": "^0.13.17"
+  },
+  "devDependencies": {
+    "@vality/openapi-generator-cli": "^2.0.0",
+    "json-merge-patch": "1.0.2"
+  },
+  "scripts": {
+    "start": "openapi preview-docs",
+    "build": "openapi bundle -o web_deploy/openapi.yaml && openapi bundle -o web_deploy/openapi.json",
+    "validate": "openapi lint",
+    "codegen": "vality-openapi generate ./web_deploy/openapi.json"
+  }
+}

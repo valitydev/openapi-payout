@@ -1,0 +1,22 @@
+post:
+  summary: Подтверждение намерения перевода денежных средств
+  operationId: transferConfirm
+  security:
+    - bearer: []
+  tags:
+    - transfer
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    $ref: ../components/requestBodies/TransferConfirmRequest.yaml
+  responses:
+    '202':
+      description: Успешное подтверждение намерения перевода денежных средств
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/Transfer/Transfer.yaml'
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml

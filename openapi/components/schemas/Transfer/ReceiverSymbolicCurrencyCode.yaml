@@ -1,0 +1,4 @@
+description: Валюта получателя. Код валюты в соответствии с ISO 4217.
+type: string
+pattern: ^[A-Z]{3}$
+example: USD

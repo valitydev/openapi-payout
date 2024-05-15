@@ -1,0 +1,26 @@
+post:
+  summary: Инициализация выплаты с фиксацией курса
+  description: |
+    На этапе инициализации выплаты фиксируется курс перевода денежных средств
+  operationId: transferFixRate
+  security:
+    - bearer: []
+  tags:
+    - transfer
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    $ref: ../components/requestBodies/TransferFixRateRequest.yaml
+  responses:
+    '202':
+      description: Курс перевода зафиксирован
+      content:
+        application/json:
+          schema:
+            $ref: '../components/responses/TransferFixRateResponse.yaml'
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '409':
+      $ref: ../components/responses/TransferConflict.yaml

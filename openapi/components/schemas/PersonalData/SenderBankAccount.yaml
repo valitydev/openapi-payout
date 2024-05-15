@@ -1,0 +1,6 @@
+type: object
+required:
+  - accountNumber
+properties:
+  accountNumber:
+    $ref: ./SenderAccountNumber.yaml

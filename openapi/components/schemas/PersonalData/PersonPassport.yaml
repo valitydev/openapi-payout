@@ -1,0 +1,53 @@
+type: object
+required:
+  - name
+  - citizenship
+  - dateOfBirth
+  - birthPlace
+  - residenceAddress
+  - number
+  - issuedBy
+  - issuedAt
+properties:
+  identityType:
+    type: string
+  name:
+    type: string
+    description: Имя
+  surname:
+    type: string
+    description: Фамилия
+  middleName:
+    type: string
+    description: Отчество
+  citizenship:
+    type: string
+    description: Гражданство
+  dateOfBirth:
+    type: string
+    description: Дата рождения
+    format: date
+  birthPlace:
+    type: string
+    description: Место рождения
+    example: Москва
+  residenceAddress:
+    type: string
+    description: Адрес места жительства (регистрации) или места пребывания
+  number:
+    type: number
+    description: Серия и номер паспорта
+    example: 2315123342
+  issuedBy:
+    type: string
+    description: Кем выдан
+  issuedAt:
+    type: string
+    format: date
+    description: Дата выдачи
+  departmentCode:
+    type: string
+    description: Код подразделения
+    example: 773-026
+
+

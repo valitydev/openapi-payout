@@ -1,0 +1,25 @@
+type: object
+required:
+  - externalId
+  - walletId
+  - settlementCurrency
+  - receiverCurrency
+  - cashAmount
+  - receiverCardNumber
+properties:
+  externalId:
+    $ref: ../ExternalId.yaml
+  walletId:
+    $ref: ../WalletId.yaml
+  settlementCurrency:
+    $ref: ./SettlementSymbolicCurrencyCode.yaml
+  receiverCurrency:
+    $ref: ./ReceiverSymbolicCurrencyCode.yaml
+  cashAmount:
+    $ref: ../CashAmount.yaml
+  senderPersonalData:
+    $ref: ../PersonalData/SenderPersonalData.yaml
+  receiverPersonalData:
+    $ref: ../PersonalData/ReceiverPersonalData.yaml
+  receiverCardNumber:
+    $ref: ../CardNumber.yaml

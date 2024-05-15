@@ -1,0 +1,9 @@
+type: object
+required:
+  - transferId
+properties:
+  transferId:
+    $ref: ./TransferId.yaml
+  conversionRate:
+    $ref: ./TransferConversionRate.yaml
+

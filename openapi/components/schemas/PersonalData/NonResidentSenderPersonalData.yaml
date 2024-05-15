@@ -1,0 +1,18 @@
+type: object
+required:
+  - type
+  - bankAccount
+  - identification
+  - inn
+properties:
+  residency:
+    type: string
+  bankAccount:
+    $ref: ./SenderBankAccount.yaml
+  identification:
+    $ref: ./PersonIdentification.yaml
+  inn:
+    type: string
+  migrationCard:
+    type: string
+    description: Миграционная карта. вид на жительство/разрешение на временное проживание/виза

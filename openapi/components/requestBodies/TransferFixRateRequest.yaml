@@ -1,0 +1,6 @@
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/Transfer/TransferFixRate.yaml
+description: Инициализация перевода с фиксацией курса.
+required: true

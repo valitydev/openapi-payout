@@ -1,0 +1,15 @@
+type: object
+required:
+  - type
+  - bankAccount
+  - identification
+  - inn
+properties:
+  residency:
+    type: string
+  bankAccount:
+    $ref: ./SenderBankAccount.yaml
+  identification:
+    $ref: ./PersonIdentification.yaml
+  inn:
+    type: string

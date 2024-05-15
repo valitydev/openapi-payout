@@ -1,0 +1,22 @@
+type: object
+required:
+  - name
+  - citizenship
+  - birthPlace
+properties:
+  name:
+    type: string
+    description: Имя
+  surname:
+    type: string
+    description: Фамилия
+  middleName:
+    type: string
+    description: Отчество
+  dateOfBirth:
+    type: string
+    description: Дата рождения
+    format: date
+  citizenship:
+    type: string
+    description: Гражданство

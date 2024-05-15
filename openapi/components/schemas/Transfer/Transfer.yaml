@@ -1,0 +1,26 @@
+type: object
+required:
+  - transferId
+  - externalId
+  - walletId
+  - status
+  - cashFrom
+  - cashTo
+  - cashRate
+properties:
+  transferId:
+    $ref: ./TransferId.yaml
+  externalId:
+    $ref: ../ExternalId.yaml
+  walletId:
+    $ref: ../WalletId.yaml
+  status:
+    $ref: ./TransferStatus.yaml
+  cashFrom:
+    $ref: ./TransferCashAmount.yaml
+  cashTo:
+    $ref: ./TransferCashAmount.yaml
+  cashRate:
+    $ref: ./FixedCashRate.yaml
+  failure:
+    $ref: ../Failure.yaml

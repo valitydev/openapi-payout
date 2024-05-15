@@ -1,0 +1,9 @@
+type: object
+description: If state == failed
+properties:
+  code:
+    type: string
+    description: Код ошибки перевода.
+  subError:
+    $ref: ./SubFailure.yaml
+

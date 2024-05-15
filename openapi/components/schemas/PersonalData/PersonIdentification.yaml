@@ -1,0 +1,8 @@
+type: object
+description: Идентификатор
+oneOf:
+  - $ref: './PersonPassport.yaml'
+discriminator:
+  propertyName: identityType
+  mapping:
+    passport: './PersonPassport.yaml'
